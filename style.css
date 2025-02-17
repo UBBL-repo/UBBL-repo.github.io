@@ -145,6 +145,13 @@ body {
 
 .cv-container h2 {
     color: #008080;
+    margin-bottom: -5px;
+    font-size: 40px;
+}
+
+.cv-container h1 {
+    color: black;
+    font-size: 60px;
 }
 
 

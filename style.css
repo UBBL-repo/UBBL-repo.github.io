@@ -1,6 +1,7 @@
 
-body {
+body, html {
     font-family: Arial, sans-serif; /* Applies sans-serif to everything */
+    overflow: hidden;
 }
 
 
@@ -160,15 +161,15 @@ body {
 
 
 /* Navbar */
+/* Ensure navbar menu is responsive */
 .navbar {
     background-color: #333;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;  /* Center navbar */
     padding: 10px 20px;
     width: 100%;
-    margin-left: -10px;
-    margin-top: -5px;
+    flex-wrap: wrap;
 }
 
 /* Brand Name (Text Button) */
@@ -180,7 +181,7 @@ body {
     padding: 10px 15px;
     transition: color 0.3s, background-color 0.3s;
     margin-left: -20px;
-    font-size: clamp(minpx, 3vw, maxpx);
+    font-size: clamp(minpx, 1vw, maxpx);
 }
 
 /* Hover Effect */
@@ -190,21 +191,24 @@ body {
     border-radius: 5px;
 }
 
-/* Menu */
+/* Ensure menu items don’t get cut off */
 .navbar .menu {
     display: flex;
-    gap: 15px;
+    gap: clamp(1px, 2vw, 10px);
     font-family: "Dancing Script";
-    font-size: clamp(minpx, 3vw, maxpx);
+    font-size: clamp(14px, 2vw, 18px);
+    flex-wrap: wrap;
+    justify-content: center;  /* Center menu items */
 }
 
-/* Menu Links */
+/* Ensure menu links are readable and aligned */
 .navbar a {
     color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: clamp(minpx, 3vw, maxpx);
+    font-size: clamp(14px, 2vw, 18px);
+    white-space: nowrap; /* Prevents breaking words */
 }
 
 /* Active Link */
@@ -215,7 +219,7 @@ body {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .navbar {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -225,6 +229,7 @@ body {
     .navbar .menu {
         flex-direction: row;
         flex-wrap: nowrap;
+        
     }
 
     .navbar a {

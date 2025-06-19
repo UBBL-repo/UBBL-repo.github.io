@@ -6,9 +6,9 @@ body, html {
 
 
 #profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10%;
     object-fit: cover;
     filter: grayscale(50%); /* Converts image to black & white */
     transition: filter 0.3s ease-in-out;

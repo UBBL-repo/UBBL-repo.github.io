@@ -6,7 +6,7 @@ body, html {
 
 
 #profile-pic {
-    width: 1000px;
+    width: 700px;
     height: 500px;
     border-radius: 10%;
     object-fit: cover;
@@ -186,7 +186,7 @@ body, html {
 
 /* Hover Effect */
 .navbar .brand-name:hover {
-    color: orange;
+    color:#b0d8ec;
     background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
     border-radius: 5px;
 }
@@ -213,9 +213,9 @@ body, html {
 
 /* Active Link */
 .navbar a.active {
-    color: orange !important;
+    color: #b0d8ec !important;
     font-weight: bold;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #b0d8ec;
 }
 
 /* Responsive Design */

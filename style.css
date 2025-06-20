@@ -1,7 +1,8 @@
 
 body, html {
-    font-family: Arial, sans-serif; /* Applies sans-serif to everything */
-    overflow: hidden;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;   /* Prevents horizontal scroll only */
+    overflow-y: auto;     /* Enables vertical scroll */
 }
 
 
@@ -145,9 +146,10 @@ body, html {
 }
 
 .cv-container h2 {
-    color: #008080;
+    color: #000000;
     margin-bottom: -5px;
     font-size: 40px;
+    text-align: center
 }
 
 .cv-container h1 {
@@ -236,4 +238,41 @@ body, html {
         padding: 10px;
         font-size: 14px;
     }
+}
+
+.person-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+}
+
+.person-left {
+    flex-shrink: 0;
+}
+
+.person-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.person-right {
+    flex: 1;
+    text-align: left;
+}
+
+.person-right h3 {
+    margin: 0 0 8px 0;
+}
+
+.person-right p {
+    margin: 5px 0;
 }

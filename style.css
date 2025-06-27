@@ -10,9 +10,9 @@ body, html {
     width: 100%;
     max-width: 700px;       /* Limits max width on large screens */
     height: auto;           /* Keeps aspect ratio */
-    border-radius: 10%;
+    border-radius: 5%;
     object-fit: cover;      /* Fits image nicely inside container */
-    filter: grayscale(50%);
+    filter: grayscale(0%);
     transition: filter 0.3s ease-in-out;
     display: block;
     margin: 0 auto;         /* Center the image horizontally */
@@ -280,4 +280,36 @@ body, html {
 
 .person-right p {
     margin: 5px 0;
+}
+
+
+
+.sub-navbar {
+  background-color: #f0f8ff; /* pastel blue */
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+}
+
+.sub-navbar a {
+  color: #003057;
+  text-decoration: none;
+  font-size: clamp(minpx, 1vw, maxpx);
+  padding: 1px 10px;
+}
+
+.sub-navbar a:hover {
+  text-decoration: underline;
+  color: #e9a208;
+  font-weight: normal;
+}
+
+.triangle-graphic {
+  max-width: 400px;
+  margin: 60px auto;
+  text-align: top;
 }

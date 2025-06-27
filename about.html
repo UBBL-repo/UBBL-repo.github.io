@@ -11,6 +11,15 @@
 <body>
 
     <div id="navbar"></div>
+
+    <!-- Sub-navbar for Research Page -->
+    <div class="sub-navbar">
+    <a href="#aim1">Home</a>    
+    <a href="#aim2">Imaging</a>
+    <a href="#aim3">Therapy</a>
+    <a href="#aim4">Treatment Monitoring</a>
+    </div>
+
     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -37,8 +46,29 @@
     </script>
     
 
-    <h1>About Me</h1>
-    <p>What about me?</p>
-    <p><a href="index.html">Go back to Home</a></p>
+<div class="triangle-graphic">
+  <svg viewBox="0 -30 300 300" width="100%" height="100%">
+    <!-- Lines -->
+    <line x1="150" y1="20" x2="50" y2="220" stroke="#888" stroke-width="2"/>
+    <line x1="150" y1="20" x2="250" y2="220" stroke="#888" stroke-width="2"/>
+    <line x1="50" y1="220" x2="250" y2="220" stroke="#888" stroke-width="2"/>
+
+    <!-- Circles -->
+    <circle cx="150" cy="30" r="60" fill="#c3f7ff"/>
+    <circle cx="60" cy="210" r="60" fill="#e0f7e6"/>
+    <circle cx="240" cy="210" r="60" fill="#ffe0e6"/>
+
+    <!-- Labels -->
+<!-- Labels ABOVE the larger circles -->
+<text x="150" y="-15" text-anchor="middle" fill="#003057" font-size="14" font-weight="bold">Biology</text>
+<text x="60" y="170" text-anchor="middle" fill="#003057" font-size="14" font-weight="bold">Physics</text>
+<text x="240" y="170" text-anchor="middle" fill="#003057" font-size="14" font-weight="bold">Engineering</text>
+
+
+  </svg>
+</div>
+
+
+
 </body>
 </html>

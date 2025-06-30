@@ -308,11 +308,6 @@ body, html {
   font-weight: normal;
 }
 
-.triangle-graphic {
-  max-width: 400px;
-  margin: 60px auto;
-  text-align: top;
-}
 
 .labeled-circle {
     width: 100px;
@@ -370,3 +365,109 @@ body, html {
     color: #333;
 }
 
+.rotating-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0px auto;
+}
+
+.rotating-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: spin 20s linear infinite;
+  transform-origin: center center;
+}
+
+/* Circles positioned as a triangle */
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #003057;
+}
+
+.biology {
+  background-color: #c3f7ff;
+  top: 9.5px;
+  left: 125px;
+}
+.physics {
+  background-color: #e0f7e6;
+  top: 182.7px;
+  left: 25px;
+}
+.engineering {
+  background-color: #ffe0e6;
+  top: 182.7px;
+  left: 225px;
+}
+
+
+/* Keep text upright */
+.circle span {
+  display: inline-block;
+  animation: counterspin 20s linear infinite;
+}
+
+
+
+.rotating-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.connector {
+  position: absolute;
+  width: 2px;
+  background-color: #888;
+  transform-origin: top;
+}
+
+.connector-biology {
+  height: 43px; /* distance from center to biology */
+  top: 200px;
+  left: 200px;
+  transform: rotate(60deg); /* upward */
+}
+
+.connector-physics {
+  height: 43px;
+  top: 200px;
+  left: 200px;
+  transform: rotate(180deg); /* bottom left */
+}
+
+.connector-engineering {
+  height: 43px;
+  top: 200px;
+  left: 200px;
+  transform: rotate(300deg); /* bottom right */
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes counterspin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}

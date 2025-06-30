@@ -3,28 +3,18 @@
   <h1>🏠 Home</h1>
 </div>
 
-<div id="triangle-svg" class="triangle-graphic">
-  <svg viewBox="0 -30 300 300" width="100%" height="100%">
-    
-    <!-- Rotating group -->
-    <g id="triangle-rotate-group">
-      <!-- Triangle lines -->
-      <line x1="150" y1="20" x2="50" y2="220" stroke="#888" stroke-width="2"/>
-      <line x1="150" y1="20" x2="250" y2="220" stroke="#888" stroke-width="2"/>
-      <line x1="50" y1="220" x2="250" y2="220" stroke="#888" stroke-width="2"/>
 
-      <!-- Circles -->
-      <circle cx="150" cy="30" r="60" fill="#c3f7ff"/>
-      <circle cx="60" cy="210" r="60" fill="#e0f7e6"/>
-      <circle cx="240" cy="210" r="60" fill="#ffe0e6"/>
-    
+<div class="rotating-wrapper">
+  <div class="rotating-container">
+    <div class="circle biology"><span>Biology</span></div>
+    <div class="circle physics"><span>Physics</span></div>
+    <div class="circle engineering"><span>Engineering</span></div>
+        <!-- Connecting lines -->
+    <div class="connector connector-biology"></div>
+    <div class="connector connector-physics"></div>
+    <div class="connector connector-engineering"></div>
 
-    <!-- Fixed labels (not rotating) -->
-    <text x="150" y="30" text-anchor="middle" fill="#003057" font-size="16" font-weight="bold">Biology</text>
-    <text x="60" y="210" text-anchor="middle" fill="#003057" font-size="16" font-weight="bold">Physics</text>
-    <text x="240" y="210" text-anchor="middle" fill="#003057" font-size="16" font-weight="bold">Engineering</text>
-    </g>
-  </svg>
+  </div>
 </div>
 
 

@@ -1,0 +1,290 @@
+[
+  {
+    "year": "2022",
+    "title": "Towards controlled drug delivery in brain tumors with microbubble-enhanced focused ultrasound",
+    "authors": "Schoen Jr, S., Kilinc, M. S., Lee, H., Guo, Y., Degertekin, F. L., Woodworth, G. F., & Arvanitis, C.",
+    "journal": "Advanced Drug Delivery Reviews, 180, 114043",
+    "doi": "https://doi.org/10.1016/j.addr.2021.114043",
+    "image": "images/publications/1.jpg"
+  },
+  {
+    "year": "2021",
+    "title": "Experimental Demonstration of Trans-skull Volumetric Passive Acoustic Mapping with the Heterogeneous Angular Spectrum Approach",
+    "authors": "Schoen, S., Dash, P., & Arvanitis, C. D.",
+    "journal": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+    "doi": "10.1109/TUFFC.2021.3125670",
+    "image": "images/publications/2.jpg"
+  },
+  {
+    "year": "2021",
+    "title": "Localized blood-brain barrier opening in infiltrating gliomas with MRI-guided acoustic emissions-controlled focused ultrasound",
+    "authors": "P. Anastasiadis, D. Gandhi, Y. Guo, A-K. Ahmed, S.M. Bentzen, C. D. Arvanitis, and F. Woodworth",
+    "journal": "Proceedings of the National Academy of Sciences, 118 (37), e2103280118",
+    "doi": "https://doi.org/10.1073/pnas.2103280118",
+    "image": "images/publications/3.jpg"
+  },
+  {
+    "year": "2021",
+    "title": "Closed-loop trans-skull ultrasound hyperthermia leads to improved drug delivery from thermosensitive drugs and changes the transvascular transport dynamics in brain tumors",
+    "authors": "C. Kim, Y. Guo, A. Velalopoulou, J. Leisen, A. Motamarry, K. Ramajayam, M. Aryal, D. Haemmerich, and C. D. Arvanitis",
+    "journal": "Theranostics, 11(15):7276-7293",
+    "doi": "10.7150/thno.54630",
+    "image": "images/publications/4.jpg"
+  },
+  {
+    "year": "2021",
+    "title": "Single-cell analysis reveals effective siRNA delivery in brain tumors with microbubble-enhanced ultrasound and cationic nanoparticles",
+    "authors": "Y. Guo, H. Lee, Z. Fang, A. Velalopoulou, J. Kim, B. Thomas, T. Kim, A. F. Coskun, D. P. Krummel, S. Sengupta, T. McDannold, and C. D. Arvanitis",
+    "journal": "Science Advances, 7, eabf7390",
+    "doi": "DOI: 10.1126/sciadv.abf7390",
+    "image": "images/publications/5.jpeg"
+  },
+  {
+    "year": "2021",
+    "title": "Morphological reconstruction improves microvessel mapping in super-resolution ultrasound",
+    "authors": "S. J. Schoen, Z. Zhao, A. Alva, C. Huang, S. Chen and C. D. Arvanitis",
+    "journal": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control, 68(6): 2141–2149",
+    "doi": "10.1109/TUFFC.2021.3057540",
+    "image": "images/publications/6.jpg"
+  },
+  {
+    "year": "2020",
+    "title": "Acoustic source localization with the angular spectrum approach in continuously stratified media",
+    "authors": "S. J. Schoen Jr and C. D. Arvanitis",
+    "journal": "Journal of the Acoustical Society of America 148(4) EL333-EL339",
+    "doi": "https://doi.org/10.1121/10.0002095",
+    "image": "images/publications/7.jpg"
+  },
+  {
+    "year": "2020",
+    "title": "Heterogeneous Angular Spectrum Method for Trans-skull Imaging and Focusing",
+    "authors": "S. J. Schoen Jr and C. D. Arvanitis",
+    "journal": "IEEE Transactions on Medical Imaging 39(5) 1605-1614",
+    "doi": "10.1109/TMI.2019.2953872",
+    "image": "images/publications/8.jpg"
+  },
+  {
+    "year": "2020",
+    "title": "The blood-brain barrier and blood–tumor barrier in brain tumors and metastases",
+    "authors": "C. D. Arvanitis, G. B. Ferraro, and R. K. Jain",
+    "journal": "Nature Reviews Cancer 20 26-41",
+    "doi": "https://doi.org/10.1038/s41568-019-0205-x",
+    "image": "images/publications/9.jpg"
+  },
+  {
+    "year": "2019",
+    "title": "Closed-loop spatial and temporal control of cavitation activity with passive acoustic mapping",
+    "authors": "A. Patel, S. J. Schoen Jr, and C. D. Arvanitis",
+    "journal": "IEEE Transactions on Biomedical Engineering 66(7) 2022–2031",
+    "doi": "10.1109/TBME.2018.2882337",
+    "image": "images/publications/10.jpg"
+  },
+  {
+    "year": "2018",
+    "title": "Mechanisms of enhanced drug delivery in brain metastases with focused ultrasound-induced blood–tumor barrier disruption",
+    "authors": "C. D. Arvanitis, V. Askoxylakis, Y. Guo, M. Datta, J. Kloepper, G. B. Ferraro, M. O. Bernabeu, D. Fukumura, N. McDannold, and R. K. Jain",
+    "journal": "Proceedings of the National Academy of Sciences, 115(37), E8717–E8726",
+    "doi": "https://doi.org/10.1073/pnas.1807105115",
+    "image": "images/publications/11.jpeg"
+  },
+  {
+    "year": "2017",
+    "title": "Emerging Strategies for Delivering Antiangiogenic Therapies to Primary and Metastatic Brain Tumors",
+    "authors": "V. Askoxylakis, C. D. Arvanitis, C. Wong, G. B. Ferraro, and R. K. Jain",
+    "journal": "Advanced Drug Delivery Reviews, 119, pp 159-174",
+    "doi": "https://doi.org/10.1016/j.addr.2017.06.011",
+    "image": "images/publications/12.jpg"
+  },
+  {
+    "year": "2017",
+    "title": "Fast Passive Acoustic Mapping with Angular Spectrum Approach",
+    "authors": "C. D. Arvanitis, N. McDannold, and G. T. Clement",
+    "journal": "IEEE T. Med. Imaging, 36(4), 983-993",
+    "doi": "10.1109/TMI.2016.2643565",
+    "image": "images/publications/13.jpg"
+  },
+  {
+    "year": "2016",
+    "title": "Controlled Drug Release and Chemotherapy Response in a Novel Acoustofluidic 3D Tumor Platform",
+    "authors": "K. Zervantonakis and C. D. Arvanitis",
+    "journal": "Small, 12(19) 2616–2626",
+    "doi": "https://doi.org/10.1002/smll.201503342",
+    "image": "images/publications/14.jpg"
+  },
+  {
+    "year": "2016",
+    "title": "Cavitation Enhanced Non-Thermal Ablation in Deep Brain Targets: Feasibility in a Large Animal Model",
+    "authors": "C. D. Arvanitis, N. Vykhodtseva, F. Jolesz, M. S. Livingstone and N. McDannold",
+    "journal": "Journal of Neurosurgery 124(5), pp1450-1459",
+    "doi": "https://doi.org/10.3171/2015.4.JNS142862",
+    "image": "images/publications/15.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Transcranial Assessment and Visualization of Acoustic Cavitation: Modeling and Experimental Validation",
+    "authors": "C. D. Arvanitis, G. T. Clement, and N. McDannold",
+    "journal": "IEEE T. Med. Imaging 34(6) 1270-1281, 2015",
+    "doi": "10.1109/TMI.2014.2383835",
+    "image": "images/publications/16.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Targeted, noninvasive blockade of cortical neuronal activity",
+    "authors": "N. McDannold, Y. Zhang, C. Power, C. D. Arvanitis, N. Vykhodtseva, and M. S. Livingstone",
+    "journal": "Scientific Reports; 5, 16253, 2015",
+    "doi": "10.1038/srep16253",
+    "image": "images/publications/17.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Ultrasound-Mediated Blood-Brain Barrier Disruption for Targeted Drug Delivery in the Central Nervous System",
+    "authors": "M. Aryal, C. D. Arvanitis, P. M. Alexander and N. McDannold",
+    "journal": "Advanced Drug Delivery Reviews 72 94-109, 2014",
+    "doi": "https://doi.org/10.1016/j.addr.2014.01.008",
+    "image": "images/publications/18.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Integrated Ultrasound and Magnetic Resonance Imaging for Simultaneous Temperature and Cavitation Activity Mapping During Focused Ultrasound Treatments",
+    "authors": "C. D. Arvanitis and N. McDannold",
+    "journal": "Med. Phys.; 40(11), pp112901-15, 2013",
+    "doi": " https://doi.org/10.1118/1.4823793",
+    "image": "images/publications/19.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Combining virotherapy and angiotherapy for the treatment of breast cancer",
+    "authors": "M. Bazan-Peregrino, R. C. Sainson, R. C. Carlisle, C. Thoma, R.A. Waters, C. D. Arvanitis, A. L. Harris, R. Hernandez-Alcoceba, L. W. Seymour",
+    "journal": "Cancer Gene Therapy 20(8), 461-468, 2013",
+    "doi": "https://doi.org/10.1038/cgt.2013.41",
+    "image": "images/publications/20.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Combined US and MR Guided Focused Ultrasound in the Brain",
+    "authors": "C. D. Arvanitis, M. Livingstone and McDannold",
+    "journal": "Phys. Med. Biol. 58(14), 4749-4761, 2013",
+    "doi": "10.1088/0031-9155/58/14/4749",
+    "image": "images/publications/21.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Cavitation-Enhanced Delivery of a Replicating Oncolytic Adenovirus to Tumors Using Focused Ultrasound",
+    "authors": "M. Bazan-Peregrino, B. Rifai, R. Carlisle, J. Choi, C. D. Arvanitis, L. Seymour and C. C. Coussios",
+    "journal": "J. Controlled Release 169(1-2), pp40-47, 2013",
+    "doi": "https://doi.org/10.1016/j.jconrel.2013.03.017",
+    "image": "images/publications/22.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "A Non-Exothermic Cell-Embedding Tissue-Mimicking Material for Studies of Ultrasound-Induced Hyperthermia and Drug Release",
+    "authors": "E. Mylonopoulou, M. Bazan-Peregrino, C. D. Arvanitis and C. C. Coussios",
+    "journal": "Int. J. Hyperthermia 29(2) 133-144, 2013",
+    "doi": "https://doi.org/10.3109/02656736.2012.762553",
+    "image": "images/publications/23.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Controlled Ultrasound-Induced Blood Brain Barrier Disruption Using Passive Acoustic Emissions Monitoring",
+    "authors": "C. D. Arvanitis, N. Vykhodtseva, M. S. Livingstone and N. McDannold",
+    "journal": "PLoS One 7(9): e45783, 2012",
+    "doi": "https://doi.org/10.1371/journal.pone.0045783",
+    "image": "images/publications/24.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Temporary Disruption of the Blood-Brain Barrier by use of Ultrasound and Microbubbles: Safety and Efficacy Evaluation in Rhesus Macaques",
+    "authors": "McDannold, C. D. Arvanitis, N. Vykhodtseva, and M. S. Livingstone",
+    "journal": "Cancer Research 72(14), 3652-63, 2012",
+    "doi": "https://doi.org/10.1158/0008-5472.CAN-12-0128",
+    "image": "images/publications/25.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Ultrasound-Induced Cavitation Enhances the Delivery and Therapeutic Efficacy of an Oncolytic Virus in an In Vitro Model",
+    "authors": "Bazan-Perergrino, C. D. Arvanitis, B. Rifai, L. W. Seymour and C. C. Coussios",
+    "journal": "J. Controlled Release 157(20) 235-242, 2011",
+    "doi": "https://doi.org/10.1016/j.jconrel.2011.09.086",
+    "image": "images/publications/26.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Cavitation Enhanced Extravasation for Drug Delivery",
+    "authors": "C. D. Arvanitis, M. Bazan-Peregrino, B. Rifai, L. W. Seymour, C. C. Coussios",
+    "journal": "Ultrasound Med. Biol. 37(11), pp1838-52, 2011",
+    "doi": "https://doi.org/10.1016/j.ultrasmedbio.2011.08.004",
+    "image": "images/publications/27.jpg"
+  },
+  {
+    "year": "Before 2015",
+    "title": "Cavitation-Enhanced Delivery of Macromolecules into an Obstructed Vessel",
+    "authors": "B. Rifai, C. D. Arvanitis, M. Bazan-Peregrino and C. C. Coussios",
+    "journal": "J. Acoust. Soc. Am. 128(5), EL310-315, 2010",
+    "doi": "https://doi.org/10.1121/1.3496388",
+    "image": "images/publications/28.jpg"
+  },
+
+  {
+    "year": "2022",
+    "title": "The roles of thermal and mechanical stress in focused ultrasound-mediated immunomodulation and immunotherapy for central nervous system tumors",
+    "authors": "C. Kim, M. Lim, G. F. Woodworth, C. D. Arvanitis",
+    "journal": "Journal of Neuro-oncology 157 (2), 221-236",
+    "doi": "https://doi.org/10.1007/s11060-022-03973-1",
+    "image": "images/publications/kim_2022.jpg"
+  },
+  
+{
+    "year": "2022",
+    "title": "Spatially targeted brain cancer immunotherapy with closed-loop controlled focused ultrasound and immune checkpoint blockade",
+    "authors": "H Lee, Y Guo, JL Ross, S Schoen Jr, FL Degertekin, C Arvanitis",
+    "journal": "Science Advances 8 (46), eadd2288",
+    "doi": "10.1126/sciadv.add2288",
+    "image": "images/publications/lee_2022.jpg"
+  },
+
+ {
+    "year": "2024",
+    "title": "Ultrasound frequency-controlled microbubble dynamics in brain vessels regulate the enrichment of inflammatory pathways in the blood-brain barrier",
+    "authors": "Guo Y, Lee H, Kim C, Park C, Yamamichi A, Chuntova P, Gallus M, Bernabeu MO, Okada H, Jo H, Arvanitis C.",
+    "journal": "Nature Communications 15 (1), 8021",
+    "doi": "https://doi.org/10.1038/s41467-024-52329-y",
+    "image": "images/publications/guo_2024.jpg"
+  },  
+
+ {
+    "year": "2024",
+    "title": "CMUT as a Transmitter for Microbubble-Assisted Blood-Brain Barrier Opening",
+    "authors": "MS Kilinc, RP Zangabad, C Arvanitis, FL Degertekin",
+    "journal": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+    "doi": "10.1109/TUFFC.2024.3417818",
+    "image": "images/publications/kilinc_2024.jpg"
+  },
+
+  {
+    "year": "2024",
+    "title": "A high sensitivity CMUT-based passive cavitation detector for monitoring microbubble dynamics during focused ultrasound interventions",
+    "authors": "RP Zangabad, H Lee, X Zhang, MS Kilinc, CD Arvanitis, FL Degertekin",
+    "journal": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+    "doi": "10.1109/TUFFC.2024.3436918",
+    "image": "images/publications/Zangabad_2024.jpg"
+  },
+  
+ {
+    "year": "2025",
+    "title": "Data-driven feedback augments ultrasound nanotheranostics in brain tumors",
+    "authors": "Lee, H., Menezes, V., Zeng, S., Kim, C., Baseman, C. M., Kim, J. H., ... & Arvanitis, C.",
+    "journal": "BioRxiv",
+    "doi": "https://doi.org/10.1101/2025.05.01.651328",
+    "image": "images/publications/lee_2025.jpg"
+  },
+
+   {
+    "year": "2025",
+    "title": "Closed-loop sonothermogenetic control of CAR T cells for metronomic brain cancer therapy",
+    "authors": "Zamat, A., Kim, C., Sridhar, S., Fabrega, S., Sen, R., Campbell, N., ... & Kwong, G. A.",
+    "journal": "BioRxiv",
+    "doi": "https://doi.org/10.1101/2025.04.23.650339",
+    "image": "images/publications/zamat_2025.jpg"
+  }
+
+]

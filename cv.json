@@ -11,14 +11,14 @@
       "name": "Hohyun (Henry) Lee",
       "role": "Postdoctoral Fellow",
       "category": "Graduate Students",
-      "bio": "Hohyun (Henry) Lee is a Postdoctoral Fellow in the George Woodruff School of Mechanical Engineering at the Georgia Institute of Technology. He received his Bachelor degree in Mechanical Engineering at Georgia Institute of Technology. His current research is focused on Ultrasound Imaging and Therapy. Specific topics of research include the design of ultrasound guided FUS system for targeted drug delivery in central nervous system.",
+      "bio": "Dr.Hohyun (Henry) Lee is a Postdoctoral Fellow in the George Woodruff School of Mechanical Engineering at the Georgia Institute of Technology. He received his Bachelor degree in Mechanical Engineering at Georgia Institute of Technology. His current research is focused on Ultrasound Imaging and Therapy. Specific topics of research include the design of ultrasound guided FUS system for targeted drug delivery in central nervous system.",
       "image": "images/profile.jpg"
     },
     {
       "name": "Chulyong Kim",
       "role": "Postdoctoral Fellow",
       "category": "Graduate Students",
-      "bio": "Chulyong Kim is a Postdoctoral Fellow in the George Woodruff School of Mechanical Engineering at Georgia Institute of Technology. He joined Dr. Arvanitis’ Lab in May 2018 with his general research interests in biomedical acoustics and its applications such as HIFU, ultrasonic biophysics, localized drug delivery, etc. His current research focus is on characterizing and modeling focused ultrasound-mediated hyperthermia to trigger the release of therapeutics encapsulated by nanoscale vehicles in the brain.",
+      "bio": "Dr.Chulyong Kim is a Postdoctoral Fellow in the George Woodruff School of Mechanical Engineering at Georgia Institute of Technology. He joined Dr. Arvanitis’ Lab in May 2018 with his general research interests in biomedical acoustics and its applications such as HIFU, ultrasonic biophysics, localized drug delivery, etc. His current research focus is on characterizing and modeling focused ultrasound-mediated hyperthermia to trigger the release of therapeutics encapsulated by nanoscale vehicles in the brain.",
       "image": "images/chulyong.jpg"
     },
     {
@@ -76,12 +76,20 @@
       "category": "Undergraduate Students",
       "bio": "Andrei",
       "image": "images/andrei.jpg"
-    },          
+    },  
+    {
+      "name": "Scott Schoen Jr.,",
+      "role": "Alumni",
+      "category": "Former Students",
+      "bio": "Dr. Schoen is currently at Harvard MGH as Instructor in Radiology.",
+      "image": "images/scott.jpg"
+    },  
+    
     {
       "name": "Yutong Guo",
       "role": "Alumni",
       "category": "Former Students",
-      "bio": "Currently at Stanford as Postdoctoral fellow.",
+      "bio": "Dr. Guo is currently at Stanford as Postdoctoral fellow.",
       "image": "images/yutong.jpg"
     },
     {

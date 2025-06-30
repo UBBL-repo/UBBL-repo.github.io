@@ -341,9 +341,11 @@ body, html {
 }
 
 .circle-row {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* center horizontally */
+  text-align: center;      /* center text */
+  gap: 10px;
 }
 
 .circle-description {
@@ -353,12 +355,14 @@ body, html {
 .circle-description h3 {
     margin: 0;
     font-size: clamp(16px, 2vw, 22px);
+    text-align: center;
 }
 
 .circle-description p {
     margin: 5px 0 0 0;
     font-size: clamp(14px, 2vw, 18px);
     color: #333;
+    text-align: center;
 }
 
 .rotating-wrapper {
@@ -552,4 +556,57 @@ body, html {
   margin-top: 40px;
   margin-bottom: 10px;
   color: #003057;
+}
+
+
+.domain-card-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.domain-card {
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: scale(1.05);
+}
+
+.domain-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: clamp(14px, 2vw, 18px);
+  color: #003057;
+}
+
+.domain-circle.biology {
+  background-color: #c3f7ff;
+}
+
+.domain-circle.physics {
+  background-color: #e0f7e6;
+}
+
+.domain-circle.engineering {
+  background-color: #ffe0e6;
+}
+
+.domain-card p {
+  font-size: 14px;
+  margin: 0;
 }

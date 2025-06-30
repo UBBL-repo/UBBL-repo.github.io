@@ -25,7 +25,7 @@
       "name": "Victor Menezes",
       "role": "Ph.D. Student",
       "category": "Graduate Students",
-      "bio": "Victor Menezes is an Ph.D. Student in the Bioengineering Program, in the George W. Woodruff School of Mechanical Engineering. He joined the lab as an undergraduate assistant and graduated, in 2019, with a B.S. in Mechanical Engineering from the Georgia Institute of Technology. Victor rejoined the lab in January of 2021 and focuses his research on Focused Ultrasound treatment of brain cancer.",
+      "bio": "Victor is a Ph.D. student in the Bioengineering program, in the George W. Woodruff School of Mechanical Engineering. As an undergraduate student, he used patch clamping techniques to analyze cell responses to mechanical stimulation and earned his B.S. in Mechanical Engineering. As a graduate student, Victor earned his M.S. in Bioengineering and works on blood-brain barrier opening, nanoparticle delivery to brain tumors, and liquid biopsy protocols to monitor the response of brain cancer treatment..",
       "image": "images/victor.jpg"
     },        
     {
@@ -46,14 +46,14 @@
       "name": "Beatriz Silva",
       "role": "Ph.D. Student",
       "category": "Graduate Students",
-      "bio": "Beatriz",
-      "image": "images/bea.jpg"
+      "bio": "Beatriz is a Ph.D student in the Biomedical Engineering, in the Wallace H. Coulter Department of Biomedical Engineering. She received her Bachelor’s degree in Physics in Medicine from the University of Notre Dame in May 2024. She joined Dr. Arvanitis’ Lab in August 2024, and her research focuses on investigating how ultrasound-induced mechanical forces affect cancer cell lines, aiming to understand pathways involved in cellular stress and inform the development of novel therapeutic strategies.",
+      "image": "images/bea.jpeg"
     },
     {
       "name": "Zhuoqi (Chi Chi) Tong",
       "role": "Ph.D. Student",
       "category": "Graduate Students",
-      "bio": "Chi Chi",
+      "bio": "Chi Chi is a Ph.D. student in the Wallace H. Coulter Department of Biomedical Engineering. He received his Bachelor's degree from Syracuse University in bioengineering and applied mathematics. He joined Dr. Arvanitis' lab in August 2024 and his current research involves using focused ultrasound as a therapy, looking at how to improve immune cell trafficking in brain tumors. His broader research interests include the role of mechanical stimulus from focused ultrasound on biological processes as well as cell therapy for solid tumors.",
       "image": "images/chichi.jpg"
     },                
     {

@@ -179,16 +179,12 @@ body, html {
 }
 
 /* Brand Name (Text Button) */
-.navbar .brand-name {
-    font-family: "Dancing Script";
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    transition: color 0.3s, background-color 0.3s;
-    margin-left: -20px;
-    font-size: clamp(minpx, 1vw, maxpx);
+
+.navbar .brand-name img {
+  height: 35px;
+  vertical-align: middle;
 }
+
 
 /* Hover Effect */
 .navbar .brand-name:hover {
@@ -534,12 +530,12 @@ body, html {
 
 .pub-content h3 {
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: clamp(10px, 2vw, 16px);
 }
 
 .pub-content p {
   margin: 4px 0;
-  font-size: 14px;
+  font-size: clamp(8px, 1vw, 16px);
 }
 
 .pub-content a {

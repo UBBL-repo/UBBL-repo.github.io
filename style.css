@@ -478,6 +478,7 @@ body, html {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 40px;
+  overflow: hidden;
 }
 
 .subtab-card {
@@ -565,10 +566,14 @@ body, html {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 .domain-card {
-  width: 220px;
+  display: flex;
+  gap: 20px;
+  width: 70vw;
+  max-width: 500px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -609,4 +614,9 @@ body, html {
 .domain-card p {
   font-size: 14px;
   margin: 0;
+}
+
+.section-header h1 {
+  font-size: clamp(30px, 2vw, 40px);
+  text-align: center;
 }

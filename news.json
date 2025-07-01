@@ -1,0 +1,153 @@
+[
+  {
+    "date": "2016-09",
+    "title": "FUSF Funding",
+    "description": "UB²L receives grant from the Focused Ultrasound Foundation!",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2018-02",
+    "title": "Yutong Wins Provost's Award",
+    "description": "Yutong Guo received the Provosts’ Award for her poster at the 2018 CRIDIC poster competition!",
+    "image": "images/news/istu.png"
+  },
+  {
+    "date": "2018-07",
+    "title": "CURE Foundation Grant",
+    "description": "UB²L and their collaborators at Emory Hospital receive a grant from the CURE foundation!",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2018-08",
+    "title": "NSF LEAP HI Funding",
+    "description": "UB²L and their collaborators receive a Leading Engineering grant from NSF (LEAP HI)",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2018-09",
+    "title": "PNAS Paper Accepted",
+    "description": "Our latest article on enhanced blood-brain barrier disruption has been published in the Proceedings of the National Academy of Sciences. Several outlets have already picked up the story",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2019-02",
+    "title": "Scott wins Provost’s Award",
+    "description": "Scott Schoen Jr received the Provost’s award at the 2019 CRIDIC poster competition!",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2019-07",
+    "title": "New NSF Funding",
+    "description": "UB²L and their collaborators receive another NSF Grant!",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2019-08",
+    "title": "Nature Review Cancer Paper Accepted!",
+    "description": "Our review paper on “The blood–brain barrier and blood–tumor barrier in brain tumors and metastases” has been accepted for publication at Nature Review Cancer. ",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2019-08",
+    "title": "WhatIFF Symposium",
+    "description": "Dr. Arvanitis will present at the upcoming WhatIFF Symposium in Atlanta on September 13-14.",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2020-07",
+    "title": "Yutong Wins CRS Fundamental Research Award!",
+    "description": "Yutong was  awarded the Controlled Release Society’s (CRS) Nanoscale Delivery Fundamental Research Award for her paper, “Improved nanoparticle extravasation and penetration in brain tumors with focused ultrasound.”",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2020-07",
+    "title": "Dr. Arvanitis Receives NIH MERIT Award!",
+    "description": "Dr. Arvanitis has received an R37 MERIT Award from the National Institutes of Health (NIH) National Cancer Institute; the first MERIT award for Georgia Tech (the MERIT Award grants support to “investigators with stellar records of research accomplishment”).The grant will support further research into novel closed-loop image guidance methods and targeted drug delivery,  with co-investigators Prof. Levent Degertekin (Woodruff School at Georgia Tech), Dr. Chetan Bettegowda (Johns Hopkins University), Dr. Tobey MacDonald (Winship Cancer Institute, Emory University), and Dr. Anton Bryksin (Georgia Tech).”",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2020-12",
+    "title": "Henry Recognized at FUS Foundation",
+    "description": "Henry Lee’s work was highlighted at the  7th International Symposium on Focused Ultrasound. His abstract “A Benchtop Focused Ultrasound System for Drug Screening Investigations in Central Nervous System” earned the highest peer-reviewed rating among the Foundation’s recent Global Interns.You can see the presentation here: https://www.youtube.com/watch?v=StLW4nnGnsE&feature=youtu.be Congrats Henry!”",
+    "image": "images/news/grant.png"
+  },            
+  {
+    "date": "2021-03",
+    "title": "Dr. Arvanitis Featured in GT ME News!",
+    "description": "Excerpt from the news article: Thanks to NSF funding Alper Erturk (ME), Costas Arvanitis (ME/BME), Brooks Lindsey (BME), and their colleagues are exploring ways to use vibrations and waves to develop enhanced imaging, diagnosis, and therapy of the skull-brain system, potentially paving the way for the treatment of brain tumors, detection of traumas and skull-related defects, mapping of the brain function, and neurostimulation, as well as new methods of drug delivery for treatment of diseases such as Alzheimer’s.”",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2022-03",
+    "title": "Ashley acknowledged for being 2021 Outstanding ECE Teaching Assistant, Congratulations!!",
+    "description": "",
+    "image": "images/news/grant.png"
+  },                       
+  {
+    "date": "2022-03",
+    "title": "Ashley among CRIDC 2022 Winners, Congratulations!!",
+    "description": "The Career, Research, and Innovation Development Conference (CRIDC) is Georgia Tech’s professional development event for graduate students. Ashley was awarded $2k conference fund in the poster competition from the Office of the Executive Vice President for Research. Many congratulations.",
+    "image": "images/news/grant.png"
+  },    
+  {
+    "date": "2022-03",
+    "title": "Dr. Arvanitis Promoted to Associate Professor with Tenure, Congratulations!",
+    "description": "Dr. Costas Arvanitis is among five professors from the George W. Woodruff School of Mechanical Engineering awarded promotion, effective August 15, 2022. Congratulations to these outstanding teachers, researchers, and leaders on taking the next step in their careers. https://www.me.gatech.edu/news/woodruff-school-faculty-promotions-2022",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2022-06",
+    "title": "Ashley wins 3MT, Congratulations!!",
+    "description": "",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2022-11",
+    "title": "Yutong Named 2022 Andrew J. Lockhart Postdoctoral Fellow by FUS Foundation",
+    "description": "",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2022-11",
+    "title": "Yutong receives Young Investigator Award at the 8th International Symposium on Focused Ultrasound.",
+    "description": "",
+    "image": "images/news/grant.png"
+  },
+  
+  {
+    "date": "2022-11",
+    "title": "Science Advances publishes Henry’s work on real-time monitoring and control of micro-bubble dynamics, congrats!!",
+    "description": "",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2023-02",
+    "title": "Pradosh wins CRIDC 2023 Innovation Award",
+    "description": "",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2023-02",
+    "title": "Dr. Costas Arvanitis is the recipient of the Mentor of the Year Award at Woodruff School of Mechanical Engineering!",
+    "description": "https://www.me.gatech.edu/news/faculty-and-staff-recognized-woodruff-school-awards",
+    "image": "images/news/grant.png"
+  },
+  {
+    "date": "2023-05",
+    "title": "Ashley Wins Biomedical Acoustics student poster competition at 184th ASA meeting in Chicago for “Tracking Macrophages with Ultrasound”",
+    "description": "",
+    "image": "images/news/grant.png"
+  },    
+  {
+    "date": "2024-10",
+    "title": "New Insights into Microbubble Dynamics and Blood-Brain Barrier Function: A Collaborative Breakthrough",
+    "description": "Our latest research on the coupled behavior of microbubble dynamics in brain vessels and the impact of microbubble resonant effects on the blood-brain barrier signaling and function has just been published. Great leadership by Yutong Guo and excellent team work by Hohyun (Henry) Lee, Chulyong Kim, Christian Park, Akane Yamamichi, Polly Chuntova, Ph.D., Marco Gallus, Miguel O. Bernabeu, Hideho Okada, and Hanjoong Jo. Paper and press release",
+    "image": "images/news/grant.png"
+  }, 
+  {
+    "date": "2024-10",
+    "title": " Chulyong Kim Wins Outstanding Poster Award at 2024 Advancing Gene + Cell Therapy for Cancer Conference!",
+    "description": "Congratulations to Chulyong Kim on being the recipient of the Outstanding Poster Award for the abstract entitled “Focused Ultrasound Mediated Thermogenetic Control of CAR T Cell Activity in Breast Cancer Brain Metastasis” from the American Society of Gene & Cell Therapy‘s 2024 Advancing Gene + Cell Therapy for Cancer Conference!",
+    "image": "images/news/grant.png"
+  }                
+]

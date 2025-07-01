@@ -10,17 +10,6 @@
 <body>
     <div id="navbar"></div>
 
-    <!-- Sub-navbar for research sections -->
-    <div class="sub-navbar">
-        <a href="#" onclick="showTab('home')">Home</a>
-        <a href="#" onclick="showTab('imaging')">Imaging</a>
-        <a href="#" onclick="showTab('therapy')">Therapy</a>
-        <a href="#" onclick="showTab('monitoring')">Treatment Monitoring</a>
-    </div>
-
-    <!-- Placeholder for sub-content -->
-    <div id="sub-content"></div>
-
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Load navbar
@@ -48,5 +37,16 @@
                 });
         }
     </script>
+
+     <!-- Sub-navbar for research sections -->
+    <div class="sub-navbar">
+        <a href="#" onclick="showTab('home')">Home</a>
+        <a href="#" onclick="showTab('imaging')">Imaging</a>
+        <a href="#" onclick="showTab('therapy')">Therapy</a>
+        <a href="#" onclick="showTab('monitoring')">Treatment Monitoring</a>
+    </div>
+
+    <!-- Placeholder for sub-content -->
+    <div id="sub-content"></div>   
 </body>
 </html>

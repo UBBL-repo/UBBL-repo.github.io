@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+
+                    let currentPage = window.location.pathname.split("/").pop();
+                    if (currentPage === "" || currentPage === "/") {
+                        currentPage = "index.html"; // Default to index.html if empty
+                    }
+
+                    let menuLinks = document.querySelectorAll(".menu a");
+                    menuLinks.forEach(link => {
+                        if (link.getAttribute("href") === currentPage) {
+                            link.classList.add("active");
+                        }
+                    });
+                })
+                .catch(error => console.error("Error loading navbar:", error));
+        });
+    </script> 
+
+  <div class="pub-container" id="news-container"></div>
+
+  <script>
+    fetch('news.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('news-container');
+
+        // Group news by year and month
+        const grouped = {};
+        data.forEach(item => {
+          const [year, month] = item.date.split('-');
+          if (!grouped[year]) grouped[year] = {};
+          if (!grouped[year][month]) grouped[year][month] = [];
+          grouped[year][month].push(item);
+        });
+
+        // Sort years descending, months descending
+        Object.keys(grouped).sort((a, b) => b - a).forEach(year => {
+          const yearHeader = document.createElement('h2');
+          yearHeader.className = 'pub-year-header';
+          yearHeader.textContent = year;
+          container.appendChild(yearHeader);
+
+          Object.keys(grouped[year]).sort((a, b) => b - a).forEach(month => {
+            const monthHeader = document.createElement('h3');
+            monthHeader.style.textAlign = 'center';
+            monthHeader.style.marginBottom = '10px';
+            monthHeader.textContent = new Date(year, month - 1).toLocaleString('default', { month: 'long' });
+            container.appendChild(monthHeader);
+
+            grouped[year][month].forEach(news => {
+              const card = document.createElement('div');
+              card.className = 'pub-card';
+
+              const img = document.createElement('img');
+              img.className = 'pub-image';
+              img.src = news.image;
+              img.alt = 'News image';
+
+              const content = document.createElement('div');
+              content.className = 'pub-content';
+
+              const title = document.createElement('h3');
+              title.textContent = news.title;
+
+              const description = document.createElement('p');
+              description.textContent = news.description;
+
+              content.appendChild(title);
+              content.appendChild(description);
+              card.appendChild(img);
+              card.appendChild(content);
+              container.appendChild(card);
+            });
+          });
+        });
+      });
+  </script>
+</body>
+</html>

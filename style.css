@@ -161,6 +161,11 @@ body, html {
     font-size: 60px;
 }
 
+.cv-container hr {
+    color: black;
+    max-width: 1000px;
+}
+
 
 
 

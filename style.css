@@ -198,7 +198,7 @@ body, html {
     display: flex;
     gap: clamp(1px, 2vw, 10px);
     font-family: "Dancing Script";
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(3px, 2vw, 18px);
     flex-wrap: wrap;
     justify-content: center;  /* Center menu items */
 }
@@ -209,7 +209,7 @@ body, html {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(3px, 2vw, 18px);
     white-space: nowrap; /* Prevents breaking words */
 }
 
@@ -236,7 +236,7 @@ body, html {
 
     .navbar a {
         padding: 10px;
-        font-size: 14px;
+        font-size: clamp(5px, 2vw, 18px);
     }
 }
 
@@ -369,7 +369,7 @@ body, html {
   position: relative;
   width: 400px;
   height: 400px;
-  margin: 0px auto;
+  margin: auto auto;
 }
 
 .rotating-container {

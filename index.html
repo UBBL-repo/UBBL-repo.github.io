@@ -34,17 +34,18 @@
         });
     </script>
 
+
+
+
     <!-- Home Section -->
     <section id="home">
         <div class="home-container">
             <!-- Profile Picture -->
-            <img src="images/UBLPhoto.jpg" alt="Hohyun Henry Lee" id="profile-pic">
-
             <img src="images/ubblWordmark.png" alt="Hohyun Henry Lee" id="profile-pic">
 
-            <!-- Name & Bio -->
-            <p>Ultrasound Imaging, Ultrasound Therapy, and Treatment monitoring</p>
+            <img src="images/UBLPhoto.jpg" alt="Hohyun Henry Lee" id="profile-pic">
 
+            
             <!-- Contact Links with Icons -->
             <div class="contact-links">
                 <a href="mailto:ubl@gatech.edu" target="_blank" title="Email">
@@ -59,12 +60,97 @@
                 <a href="https://github.com/ubbl-repo" target="_blank" title="GitHub">
                     <img src="images/github-icon.png" alt="GitHub">
                 </a>
-                <a href="projects.html" title="Curriculum Vitae">
-                    <img src="images/cv-icon.png" alt="CV">
+                <a href="https://x.com/GeorgiaTechUBL/status/1847699737526620490" target="_blank" title="Curriculum Vitae">
+                    <img src="images/x.jpg" alt="CV">
                 </a>
             </div>
         </div>
     </section>
+
+<!-- Fading Publication + News Cards -->
+<div class="fading-news-banner">
+  <div id="pub-card">Loading publication...</div>
+  <div id="news-card">Loading news...</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const pubContainer = document.getElementById("pub-card");
+  const newsContainer = document.getElementById("news-card");
+
+  Promise.all([
+    fetch("publications.json").then(res => res.json()),
+    fetch("news.json").then(res => res.json())
+  ])
+  .then(([pubs, news]) => {
+    const topPubs = pubs
+  .filter(p => /^\d{4}$/.test(p.year))  // keep only entries with year like "2025"
+  .sort((a, b) => parseInt(b.year) - parseInt(a.year))
+  .slice(0, 3);
+
+    const topNews = news.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
+
+const pubItems = topPubs.map(pub => `
+  <a href="publication.html" class="card-link">
+    <div class="flashing-card publication-card fade-in">
+      <img src="${pub.image}" alt="Pub Image" class="card-thumb">
+      <div class="card-text">
+        <strong>📢 Recent Publication</strong>
+        <div class="truncate"><em>${pub.title}</em></div>
+        <div class="truncate">${pub.journal}</div>
+      </div>
+    </div>
+  </a>
+`);
+
+const newsItems = topNews.map(n => `
+  <a href="news.html" class="card-link">
+    <div class="flashing-card news-card fade-in">
+      <img src="${n.image}" alt="News Image" class="card-thumb">
+      <div class="card-text">
+        <strong>📰 ${new Date(n.date).toLocaleDateString()} News</strong>
+        <div class="truncate"><em>${n.title}</em></div>
+        <div class="truncate" style="font-size: 90%;">${n.description || ''}</div>
+      </div>
+    </div>
+  </a>
+`);
+
+
+    let pubIndex = 0;
+    let newsIndex = 0;
+
+    function cycleCard(container, items, indexRef) {
+      container.classList.remove("fade-in");
+      setTimeout(() => {
+        container.innerHTML = items[indexRef.value];
+        container.classList.add("fade-in");
+        indexRef.value = (indexRef.value + 1) % items.length;
+      }, 200);
+    }
+
+    const pubState = { value: 0 };
+    const newsState = { value: 0 };
+
+    cycleCard(pubContainer, pubItems, pubState);
+    cycleCard(newsContainer, newsItems, newsState);
+
+    setInterval(() => cycleCard(pubContainer, pubItems, pubState), 5000);
+    setInterval(() => cycleCard(newsContainer, newsItems, newsState), 5000);
+  })
+  .catch(err => {
+    pubContainer.className = "flashing-card error-card";
+    newsContainer.className = "flashing-card error-card";
+    pubContainer.textContent = "⚠️ Failed to load publications.";
+    newsContainer.textContent = "⚠️ Failed to load news.";
+    console.error(err);
+  });
+});
+</script>
+
+
+
+
 
 </body>
 </html>

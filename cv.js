@@ -38,20 +38,43 @@ function displayPeople(members) {
             const card = document.createElement("div");
             card.classList.add("person-card");
 
+            // Build social icons
+            let linksHTML = '<div class="person-links">';
+            if (member.website) {
+                linksHTML += `<a href="${member.website}" target="_blank" title="Website"><i class="fas fa-globe"></i></a>`;
+            }
+            if (member.email) {
+                linksHTML += `<a href="mailto:${member.email}" title="Email"><i class="fas fa-envelope"></i></a>`;
+            }
+            if (member.linkedin) {
+                linksHTML += `<a href="${member.linkedin}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>`;
+            }
+            if (member.scholar) {
+                linksHTML += `<a href="${member.scholar}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>`;
+            }
+            linksHTML += '</div>';
+
             card.innerHTML = `
-                <div class="person-left">
-                    <img src="${member.image}" alt="${member.name}" class="person-image">
+            <div class="person-left">
+                <img src="${member.image}" alt="${member.name}" class="person-image">
+                <div class="person-links">
+                ${member.website ? `<a href="${member.website}" target="_blank" title="Website"><i class="fas fa-globe"></i></a>` : ''}
+                ${member.email ? `<a href="mailto:${member.email}" title="Email"><i class="fas fa-envelope"></i></a>` : ''}
+                ${member.linkedin ? `<a href="${member.linkedin}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>` : ''}
+                ${member.scholar ? `<a href="${member.scholar}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>` : ''}
                 </div>
-                <div class="person-right">
-                    <h3>${member.name}</h3>
-                    <p><strong>${member.role}</strong></p>
-                    <p>${member.bio}</p>
-                </div>
+            </div>
+            <div class="person-right">
+                <h3>${member.name}</h3>
+                <p><strong>${member.role}</strong></p>
+                <p>${member.bio}</p>
+            </div>
             `;
 
 
             sectionContainer.appendChild(card);
         });
+
 
         container.appendChild(sectionContainer);
     });

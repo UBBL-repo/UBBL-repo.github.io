@@ -28,10 +28,10 @@
       "category": "Graduate Students",
       "bio": "Dr.Chulyong Kim is a Postdoctoral Fellow in the George Woodruff School of Mechanical Engineering at Georgia Institute of Technology. He joined Dr. Arvanitis’ Lab in May 2018 with his general research interests in biomedical acoustics and its applications such as HIFU, ultrasonic biophysics, localized drug delivery, etc. His current research focus is on characterizing and modeling focused ultrasound-mediated hyperthermia to trigger the release of therapeutics encapsulated by nanoscale vehicles in the brain.",
       "image": "images/chulyong.jpg",
-      "email": "",
+      "email": "ck379@gatech.edu",
       "website": "",
-      "linkedin": "",
-      "scholar": "" 
+      "linkedin": "https://www.linkedin.com/in/chulyong-kim-946069137/",
+      "scholar": "https://scholar.google.com/citations?user=bKuvyaAAAAAJ&hl=en"
     },
     {
       "name": "Victor Menezes",
@@ -39,10 +39,10 @@
       "category": "Graduate Students",
       "bio": "Victor is a Ph.D. student in the Bioengineering program, in the George W. Woodruff School of Mechanical Engineering. As an undergraduate student, he used patch clamping techniques to analyze cell responses to mechanical stimulation and earned his B.S. in Mechanical Engineering. As a graduate student, Victor earned his M.S. in Bioengineering and works on blood-brain barrier opening, nanoparticle delivery to brain tumors, and liquid biopsy protocols to monitor the response of brain cancer treatment..",
       "image": "images/victor.jpg",
-      "email": "",
+      "email": "victorm@gatech.edu",
       "website": "",
-      "linkedin": "",
-      "scholar": "" 
+      "linkedin": "https://www.linkedin.com/in/menezesv/",
+      "scholar": "https://scholar.google.com/citations?user=fQfoPK4AAAAJ&hl=en"
     },        
     {
       "name": "Pradosh P. Dash",
@@ -59,12 +59,12 @@
       "name": "Yann Ferry",
       "role": "Ph.D. Student",
       "category": "Graduate Students",
-      "bio": "Yann",
-      "image": "images/yann.jpg",
-      "email": "",
+      "bio": "Yann is a Ph.D. student in the Wallace H. Coulter Department of Biomedical Engineering. He received a M.Sc. from ETH Zurich in Biomedical Engineering and a M.Sc. from Telecom Paris in Computer and Electrical Engineering. He joined Dr. Arvanitis' lab in August 2023 and his current research involves imaging immune cells trafficking with ultrasound. His recent work focused on imaging microbubbles-labeled macrophages trafficking and accumulation in solid tumors.",
+      "image": "images/yann.jfif",
+      "email": "yferry3@gatech.edu",
       "website": "",
-      "linkedin": "",
-      "scholar": "" 
+      "linkedin": "https://www.linkedin.com/in/yann-ferry",
+      "scholar": "https://scholar.google.com/citations?user=Pl1Q1lQAAAAJ&hl=fr&oi=ao"
     },
     {
       "name": "Beatriz Silva",
@@ -72,10 +72,10 @@
       "category": "Graduate Students",
       "bio": "Beatriz is a Ph.D student in the Biomedical Engineering, in the Wallace H. Coulter Department of Biomedical Engineering. She received her Bachelor’s degree in Physics in Medicine from the University of Notre Dame in May 2024. She joined Dr. Arvanitis’ Lab in August 2024, and her research focuses on investigating how ultrasound-induced mechanical forces affect cancer cell lines, aiming to understand pathways involved in cellular stress and inform the development of novel therapeutic strategies.",
       "image": "images/bea.jpeg",
-      "email": "",
+      "email": "bsilva41@gatech.edu",
       "website": "",
-      "linkedin": "",
-      "scholar": "" 
+      "linkedin":"https://www.linkedin.com/in/beatriz-silva-333254204",
+      "scholar": ""
     },
     {
       "name": "Zhuoqi (Chi Chi) Tong",

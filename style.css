@@ -6,23 +6,6 @@ body, html {
 }
 
 
-#profile-pic {
-    width: 100%;
-    max-width: 700px;       /* Limits max width on large screens */
-    height: auto;           /* Keeps aspect ratio */
-    border-radius: 5%;
-    object-fit: cover;      /* Fits image nicely inside container */
-    filter: grayscale(0%);
-    transition: filter 0.3s ease-in-out;
-    display: block;
-    margin: 0 auto;         /* Center the image horizontally */
-}
-
-
-#profile-pic:hover {
-    filter: grayscale(0%); /* Restores color when hovered */
-}
-
 
 .home-container {
     text-align: center;
@@ -398,9 +381,12 @@ body, html {
 
 .rotating-wrapper {
   position: relative;
-  width: 400px;
-  height: 400px;
-  margin: auto auto;
+  width: 30vw;       /* ✅ Responsive width */
+  height: 30vw;      /* ✅ Responsive height */
+  max-width: 400px;  /* ✅ Optional cap on large screens */
+  max-height: 400px;
+  z-index: 2;
+  flex-shrink: 0;
 }
 
 .rotating-container {
@@ -411,35 +397,44 @@ body, html {
   transform-origin: center center;
 }
 
-/* Circles positioned as a triangle */
+
 .circle {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 37.5%;
+  height: 37.5%;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 20px;
-  color: #003057;
+  font-size: clamp(8px, 1.8vw, 20px);
+  color: #2A2A2A;
+  transform: translate(-50%, -50%); /* ✅ center circle at its position */
 }
 
+
+
+
 .biology {
-  background-color: #c3f7ff;
-  top: 9.5px;
-  left: 125px;
+  background-color: #AFC1A6;
+  top: 15%;
+  left: 50%;
 }
+
 .physics {
-  background-color: #e0f7e6;
-  top: 182.7px;
-  left: 25px;
+  background-color: #D3BFA0;
+  top: 67.5%;
+  left: 80.3%;
 }
+
 .engineering {
-  background-color: #ffe0e6;
-  top: 182.7px;
-  left: 225px;
+  background-color: #A0B4BF;
+  top: 67.5%;
+  left: 19.7%;
 }
+
+
+
 
 
 /* Keep text upright */
@@ -450,20 +445,6 @@ body, html {
 
 
 
-.rotating-wrapper::after {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: red;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  pointer-events: none;
-}
-
 .connector {
   position: absolute;
   width: 2px;
@@ -472,23 +453,23 @@ body, html {
 }
 
 .connector-biology {
-  height: 43px; /* distance from center to biology */
-  top: 200px;
-  left: 200px;
+  height: 16%; /* distance from center to biology */
+  top: 50%;
+  left: 50%;
   transform: rotate(60deg); /* upward */
 }
 
 .connector-physics {
-  height: 43px;
-  top: 200px;
-  left: 200px;
+  height: 16%;
+  top: 50%;
+  left: 50%;
   transform: rotate(180deg); /* bottom left */
 }
 
 .connector-engineering {
-  height: 43px;
-  top: 200px;
-  left: 200px;
+  height: 16%;
+  top: 50%;
+  left: 50%;
   transform: rotate(300deg); /* bottom right */
 }
 
@@ -772,4 +753,108 @@ body, html {
 
 .resource-list a:hover {
   text-decoration: underline;
+}
+.rotating-container-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0px 0px; /* create top and bottom space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-panel {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  z-index: 0;
+  max-width: 100vw;
+  max-height: 60vh;
+  overflow: hidden;
+  padding-top: 0px; /* optional push down more */
+}
+
+.panel-image {
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.panel-image:hover {
+  filter: none;
+}
+
+.panel-image.active {
+  filter: none;
+  box-shadow: 0 0 10px 4px rgba(0, 200, 255, 0.6);
+}
+
+.logo-wordmark {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 800px;
+  max-width: 80vw;
+}
+
+.intro-flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.photo-wrapper {
+  flex: 1;
+  min-width: 5px;
+  max-width: 30vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rotating-logo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  max-width: 70px;
+  aspect-ratio: 1 / 1;          /* ✅ Keep square shape */
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+
+  border-radius: 50%;           /* ✅ Make it a perfect circle */
+  overflow: hidden;             /* ✅ Hide corners outside the circle */
+  object-fit: cover;            /* ✅ Scale and crop the logo to fit */
+  box-shadow: 0 0 8px rgba(0,0,0,0.15); /* Optional subtle glow */
+}
+
+.orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  border: 2px dashed rgba(0, 48, 87, 0.2); /* GT Blue, subtle */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* Behind triangle & logo */
 }

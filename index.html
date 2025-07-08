@@ -41,9 +41,27 @@
     <section id="home">
         <div class="home-container">
             <!-- Profile Picture -->
-            <img src="images/ubblWordmark.png" alt="Hohyun Henry Lee" id="profile-pic">
+          <!-- Centered Wordmark -->
+          <img src="images/ubblWordmark.png" alt="UBBL Wordmark" class="logo-wordmark">
 
-            <img src="images/UBLPhoto.jpg" alt="Hohyun Henry Lee" id="profile-pic">
+          <!-- Side-by-side layout: profile photo + rotating triangle -->
+          <div class="intro-flex-row">
+            <div class="photo-wrapper">
+              <img src="images/UBLPhoto.jpg" alt="Lab Photo" class="profile-photo">
+            </div>
+
+            <div class="rotating-wrapper">
+              
+              <div class="orbit-path"></div>
+              <img src="images/logo.png" alt="UBBL Logo" class="rotating-logo-center">
+              <div class="rotating-container">
+                <div class="circle biology"><span>Biology</span></div>
+                <div class="circle physics"><span>Physics</span></div>
+                <div class="circle engineering"><span>Engineering</span></div>
+              </div>
+            </div>
+          </div>
+
 
             <div class="fading-news-banner">
   <div id="pub-card">Loading publication...</div>

@@ -10,6 +10,19 @@
 <body>
     <div id="navbar"></div>
 
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let index = 0;
+        const panels = document.querySelectorAll('.panel-image');
+
+        setInterval(() => {
+        panels.forEach((p, i) => p.classList.toggle('active', i === index));
+        index = (index + 1) % panels.length;
+        }, 1000);
+    });
+    </script>
+    
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Load navbar

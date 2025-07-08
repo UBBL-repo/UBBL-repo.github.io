@@ -3,27 +3,23 @@
   <h1>🏠 Home</h1>
 </div>
 
-
-<div class="rotating-wrapper">
-  <div class="rotating-container">
-    <div class="circle biology"><span>Biology</span></div>
-    <div class="circle physics"><span>Physics</span></div>
-    <div class="circle engineering"><span>Engineering</span></div>
-        <!-- Connecting lines -->
-    <div class="connector connector-biology"></div>
-    <div class="connector connector-physics"></div>
-    <div class="connector connector-engineering"></div>
-
+<div class="rotating-container-wrapper">
+  <!-- Background images behind the rotating circle -->
+  <div class="background-panel">
+    <div class="panel-image" style="background-image: url('images/bg1.png');" onclick="showTab('imaging')"></div>
+    <div class="panel-image" style="background-image: url('images/bg2.jpg');" onclick="showTab('therapy')"></div>
+    <div class="panel-image" style="background-image: url('images/bg3.jpg');" onclick="showTab('monitoring')"></div>
+    <div class="panel-image" style="background-image: url('images/bg4.jpg');" onclick="alert('More coming soon')"></div>
   </div>
 </div>
 
 
-
+<!-- Text below rotating diagram -->
 <div style="max-width: 600px; margin: 30px auto; text-align: center;">
   <p>Our lab integrates <strong>Biology</strong>, <strong>Physics</strong>, and <strong>Engineering</strong> to enable cutting-edge ultrasound-based diagnosis and therapies for applications below.</p>
 </div>
 
-
+<!-- Cards for switching to sections -->
 <div class="subtab-gallery">
   <div class="subtab-card" onclick="showTab('imaging')">
     <img src="images/imaging.png" alt="Imaging">
@@ -39,3 +35,17 @@
   </div>
 </div>
 
+<!-- Highlight cycle logic -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let panelIndex = 0;
+    const panels = document.querySelectorAll('.panel-image');
+
+    setInterval(() => {
+      panels.forEach((panel, idx) => {
+        panel.classList.toggle('active', idx === panelIndex);
+      });
+      panelIndex = (panelIndex + 1) % panels.length;
+    }, 1000);
+  });
+</script>

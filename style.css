@@ -31,7 +31,7 @@ body, html {
 
 
 .contact-links {
-    margin-top: 20px;
+    margin-top: 00px;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -656,7 +656,7 @@ body, html {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  margin: 0px auto 0px auto;
+  margin: 30px auto 0px auto;
   padding: 0 20px;
   padding-bottom: 40px;  /* Add this */
   overflow: visible;     /* Important */

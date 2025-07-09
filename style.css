@@ -781,8 +781,8 @@ body, html {
 }
 
 .panel-image {
+  position: relative;
   width: 20vw;
-  max-width: 200px;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -790,7 +790,30 @@ body, html {
   filter: grayscale(100%);
   transition: filter 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.panel-label {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.4em 1em;
+  background-color: rgba(0, 0, 0, 0.5); /* 🧠 Semi-transparent black */
+  color: white;
+  font-weight: bold;
+  font-size: clamp(12px, 2vw, 24px);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.panel-image:hover .panel-label,
+.panel-image.active .panel-label {
+  transform: translateX(-50%) scale(1.05);  /* Slight zoom */
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.9); /* Glow */
+  color:#fffdc1; /* Optional: pale yellow tint for emphasis */
 }
 
 .panel-image:hover {

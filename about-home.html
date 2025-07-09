@@ -1,51 +1,16 @@
 <!-- about-home.html -->
 <div class="section-header">
-  <h1>🏠 Home</h1>
+  <h1></h1>
 </div>
 
-<div class="rotating-container-wrapper">
+<div class="panel-wrapper">
   <!-- Background images behind the rotating circle -->
   <div class="background-panel">
-    <div class="panel-image" style="background-image: url('images/bg1.png');" onclick="showTab('imaging')"></div>
+    <div class="panel-image" style="background-image: url('images/bg1.jpg');" onclick="showTab('imaging')"></div>
     <div class="panel-image" style="background-image: url('images/bg2.jpg');" onclick="showTab('therapy')"></div>
-    <div class="panel-image" style="background-image: url('images/bg3.jpg');" onclick="showTab('monitoring')"></div>
+    <div class="panel-image" style="background-image: url('images/bg3.png');" onclick="showTab('monitoring')"></div>
     <div class="panel-image" style="background-image: url('images/bg4.jpg');" onclick="alert('More coming soon')"></div>
   </div>
 </div>
 
 
-<!-- Text below rotating diagram -->
-<div style="max-width: 600px; margin: 30px auto; text-align: center;">
-  <p>Our lab integrates <strong>Biology</strong>, <strong>Physics</strong>, and <strong>Engineering</strong> to enable cutting-edge ultrasound-based diagnosis and therapies for applications below.</p>
-</div>
-
-<!-- Cards for switching to sections -->
-<div class="subtab-gallery">
-  <div class="subtab-card" onclick="showTab('imaging')">
-    <img src="images/imaging.png" alt="Imaging">
-    <p>Imaging</p>
-  </div>
-  <div class="subtab-card" onclick="showTab('therapy')">
-    <img src="images/therapy.png" alt="Therapy">
-    <p>Therapy</p>
-  </div>
-  <div class="subtab-card" onclick="showTab('monitoring')">
-    <img src="images/monitoring.jpg" alt="Treatment Monitoring">
-    <p>Treatment Monitoring</p>
-  </div>
-</div>
-
-<!-- Highlight cycle logic -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    let panelIndex = 0;
-    const panels = document.querySelectorAll('.panel-image');
-
-    setInterval(() => {
-      panels.forEach((panel, idx) => {
-        panel.classList.toggle('active', idx === panelIndex);
-      });
-      panelIndex = (panelIndex + 1) % panels.length;
-    }, 1000);
-  });
-</script>

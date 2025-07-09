@@ -754,7 +754,8 @@ body, html {
 .resource-list a:hover {
   text-decoration: underline;
 }
-.rotating-container-wrapper {
+
+.panel-wrapper {
   position: relative;
   width: 100%;
   min-height: 50vh;
@@ -781,6 +782,7 @@ body, html {
 
 .panel-image {
   width: 20vw;
+  max-width: 200px;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -809,25 +811,47 @@ body, html {
 
 .intro-flex-row {
   display: flex;
+  align-items: center;       /* ✅ Vertically align items */
+  gap: 3vw;
+  flex-wrap: wrap;           /* ✅ Stacks on small screens */
   justify-content: center;
-  align-items: stretch;
-  gap: 40px;
-  flex-wrap: wrap;
 }
+
 
 .photo-wrapper {
   flex: 1;
-  min-width: 5px;
-  max-width: 30vw;
-  display: flex;
+  max-width: 25vw;
+  position: relative;            /* 🧠 Needed for absolutely stacking images */
+  aspect-ratio: 1 / 1;           /* ✅ Maintain square shape */
   overflow: hidden;
+  border-radius: 25%;            /* Keeps outer container rounded too */
 }
 
 .profile-photo {
+  position: absolute;            /* ✅ Allows layering for fade */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 25%;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 1;
+  transform: translateX(100%);
+}
+
+
+.profile-photo.prev {
+  opacity: 0;
+  transform: translateX(-100%); /* ⬅ outgoing slides left */
+  z-index: 1;
+}
+
+.profile-photo.active {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(0);
 }
 
 .rotating-logo-center {
@@ -847,13 +871,38 @@ body, html {
   box-shadow: 0 0 8px rgba(0,0,0,0.15); /* Optional subtle glow */
 }
 
-.orbit-path {
+.orbit-path1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70%;
-  height: 70%;
-  border: 2px dashed rgba(0, 48, 87, 0.2); /* GT Blue, subtle */
+  width: 55%;
+  height: 55%;
+  border: 1px dashed #D3BFA0; /* GT Blue, subtle */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* Behind triangle & logo */
+}
+
+
+.orbit-path3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  border: 1px dashed #AFC1A6; /* GT Blue, subtle */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* Behind triangle & logo */
+}
+
+.orbit-path2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 65%;
+  border: 1px dashed #A0B4BF; /* GT Blue, subtle */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 0; /* Behind triangle & logo */

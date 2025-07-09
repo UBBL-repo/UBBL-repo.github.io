@@ -44,15 +44,25 @@
           <!-- Centered Wordmark -->
           <img src="images/ubblWordmark.png" alt="UBBL Wordmark" class="logo-wordmark">
 
+          
+      <div style="max-width: 50vw; margin: 30px auto; text-align: center;">
+        <p>Integrating <strong>Biology</strong>, <strong>Physics</strong>, and <strong>Engineering</strong> for ultrasound-based theranostics.</p>
+      </div>
+
           <!-- Side-by-side layout: profile photo + rotating triangle -->
           <div class="intro-flex-row">
-            <div class="photo-wrapper">
-              <img src="images/UBLPhoto.jpg" alt="Lab Photo" class="profile-photo">
-            </div>
+              <div class="photo-wrapper">
+                <img src="images/UBLPhoto.jpg" alt="Lab Photo 1" class="profile-photo active">
+                <img src="images/UBLPhoto2.jpg" alt="Lab Photo 2" class="profile-photo">
+                <img src="images/UBLPhoto3.jpg" alt="Lab Photo 3" class="profile-photo">
+              </div>
+
 
             <div class="rotating-wrapper">
               
-              <div class="orbit-path"></div>
+              <div class="orbit-path1"></div>
+              <div class="orbit-path2"></div>
+              <div class="orbit-path3"></div>
               <img src="images/logo.png" alt="UBBL Logo" class="rotating-logo-center">
               <div class="rotating-container">
                 <div class="circle biology"><span>Biology</span></div>
@@ -63,6 +73,7 @@
           </div>
 
 
+
             <div class="fading-news-banner">
   <div id="pub-card">Loading publication...</div>
   <div id="news-card">Loading news...</div>
@@ -70,19 +81,19 @@
             <!-- Contact Links with Icons -->
             <div class="contact-links">
                 <a href="mailto:ubl@gatech.edu" target="_blank" title="Email">
-                    <img src="images/email-icon.png" alt="Email">
+                    <img src="images/logo/email-icon.png" alt="Email">
                 </a>
                 <a href="https://www.linkedin.com/in/costas-arvanitis-1a848b3a" target="_blank" title="LinkedIn">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                    <img src="images/logo/linkedin-icon.png" alt="LinkedIn">
                 </a>
                 <a href="https://scholar.google.com/citations?user=8I1e-u8AAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
-                    <img src="images/scholar-icon.png" alt="Google Scholar">
+                    <img src="images/logo/scholar-icon.png" alt="Google Scholar">
                 </a>
                 <a href="https://github.com/ubbl-repo" target="_blank" title="GitHub">
-                    <img src="images/github-icon.png" alt="GitHub">
+                    <img src="images/logo/github-icon.png" alt="GitHub">
                 </a>
                 <a href="https://x.com/GeorgiaTechUBL/status/1847699737526620490" target="_blank" title="Curriculum Vitae">
-                    <img src="images/x.jpg" alt="CV">
+                    <img src="images/logo/x.jpg" alt="CV">
                 </a>
             </div>
         </div>
@@ -165,6 +176,29 @@ const newsItems = topNews.map(n => `
   });
 });
 </script>
+
+
+<script>
+  const photos = document.querySelectorAll('.profile-photo');
+  let current = 0;
+  let prev = photos.length - 1;
+
+  function switchPhoto() {
+    photos.forEach(photo => photo.classList.remove('active', 'prev'));
+    photos[prev].classList.add('prev');
+    photos[current].classList.add('active');
+    prev = current;
+    current = (current + 1) % photos.length;
+  }
+
+  // ✅ Trigger the first one instantly
+  switchPhoto();
+
+  // ✅ Then continue every 4 seconds
+  setInterval(switchPhoto, 2000);
+</script>
+
+
 
 
 

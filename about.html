@@ -10,7 +10,7 @@
 <body>
     <div id="navbar"></div>
 
-
+    <div class="global-background"></div>
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         let index = 0;
@@ -24,6 +24,9 @@
     </script>
     
     <script>
+
+        window.fromAboutPage = true;
+
         document.addEventListener("DOMContentLoaded", () => {
             // Load navbar
             fetch("navbar.html")
@@ -40,24 +43,87 @@
 
             // Load default tab
             showTab('home');
+            
         });
 
-        function showTab(tabName) {
-            fetch(`about-${tabName}.html`)
-                .then(res => res.text())
-                .then(html => {
-                    document.getElementById("sub-content").innerHTML = html;
-                });
-        }
+            function showTab(tabName) {
+                fetch(`about-${tabName}.html`)
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("sub-content").innerHTML = html;
+
+                        // ✅ Run this AFTER content is added
+                    if (tabName === 'home') {
+                        setTimeout(() => {
+                            if (typeof initializeAboutHomeHover === 'function') {
+                                initializeAboutHomeHover();
+                            }
+                        }, 50); // small delay to allow script tag to be parsed
+                    }
+
+                                        });
+                                }
+
     </script>
 
-     <!-- Sub-navbar for research sections -->
-    <div class="sub-navbar">
-        <a href="#" onclick="showTab('home')">Home</a>
-        <a href="#" onclick="showTab('imaging')">Imaging</a>
-        <a href="#" onclick="showTab('therapy')">Therapy</a>
-        <a href="#" onclick="showTab('monitoring')">Treatment Monitoring</a>
-    </div>
+
+<script>
+  window.initializeAboutHomeHover = function () {
+    const panels = document.querySelectorAll('.panel-image');
+    const descBox = document.getElementById('panel-description');
+    const overlay = document.getElementById('background-overlay');
+    const defaultText = "Tap or hover over a panel to see more details.";
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+
+    if (!descBox || !overlay) return;
+
+    panels.forEach(panel => {
+      const tab = panel.getAttribute('data-tab');
+      const text = panel.getAttribute('data-description');
+      const bgImage = panel.style.backgroundImage.slice(5, -2); // strips url("...") wrapper
+      let tappedOnce = false;
+
+      const loadContent = () => {
+        fetch(`about-${tab}.html`)
+          .then(res => res.text())
+          .then(html => {
+            descBox.innerHTML = html;
+            overlay.style.backgroundImage = `url('${bgImage}')`;
+          });
+      };
+
+      if (isTouchDevice) {
+        panel.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (!tappedOnce) {
+            loadContent();
+            tappedOnce = true;
+            setTimeout(() => tappedOnce = false, 5000);
+          }
+        });
+      } else {
+        panel.addEventListener('mouseenter', () => {
+          loadContent();
+        });
+      }
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initializeAboutHomeHover === 'function') {
+      initializeAboutHomeHover();
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
 
     <!-- Placeholder for sub-content -->
     <div id="sub-content"></div>   

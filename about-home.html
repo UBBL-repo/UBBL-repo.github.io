@@ -1,24 +1,64 @@
-<!-- about-home.html -->
-<div class="section-header">
-  <h1></h1>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<div class="panel-wrapper">
-  <!-- Background images behind the rotating circle -->
-  <div class="background-panel">
-    <div class="panel-image" style="background-image: url('images/bg1.png');" onclick="showTab('imaging')">
-        <div class="panel-label">Instrumentation</div> 
-    </div>
-    <div class="panel-image" style="background-image: url('images/bg2.png');" onclick="showTab('therapy')">
-        <div class="panel-label">Imaging</div> 
-    </div>
-    <div class="panel-image" style="background-image: url('images/bg3.png');" onclick="showTab('monitoring')">
-        <div class="panel-label">Therapy</div> 
-    </div>
-    <div class="panel-image" style="background-image: url('images/bg4.jpg');" onclick="showTab('imaging')">
-        <div class="panel-label">Treatment Monitoring</div> 
+  <div class="section-header">
+    <h1></h1>
+  </div>
+
+<div class="global-background"></div>
+
+  <div class="background-overlay" id="background-overlay"></div>
+
+
+  <div class="panel-wrapper">
+    <div class="panel-container">
+      <!-- Four Panels -->
+      <div class="background-panel">
+        <div class="panel-image"
+             style="background-image: url('images/bg2.png');"
+             data-tab="imaging"
+             data-description="Custom hardware, acoustic holography, and transducer arrays.">
+          <div class="panel-label">Imaging</div>
+        </div>
+
+        <div class="panel-image"
+             style="background-image: url('images/bg3.png');"
+             data-tab="therapy"
+             data-description="Precise drug delivery through the blood-brain barrier using FUS.">
+          <div class="panel-label">Therapy</div>
+        </div>
+
+        <div class="panel-image"
+             style="background-image: url('images/bg4.jpg');"
+             data-tab="monitoring"
+             data-description="Focused ultrasound for tumor and neurodegenerative therapies.">
+          <div class="panel-label">Treatment Monitoring</div>
+        </div>
+
+        <div class="panel-image"
+             style="background-image: url('images/bg1.png');"
+             data-tab="instrumentation"
+             data-description="Real-time monitoring of microbubble dynamics across the skull.">
+          <div class="panel-label">Instrumentation</div>
+        </div>
+      </div>
+
+      <!-- Hover Description -->
+      <div id="panel-description" class="panel-description">
+        Hover over a panel to see more details.
+      </div>
     </div>
   </div>
-</div>
 
 
+
+
+</body>
+</html>

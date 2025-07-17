@@ -2,24 +2,38 @@
   <h1>🛠️ Instrumentation</h1>
 </div>
 
-<div class="instrumentation-grid">
+<div class="imaging-grid">
   <!-- Left Text -->
-  <div class="instrumentation-text">
+  <div class="imaging-text">
+    <h2>Microbubble dynamics: modeling, monitoring, and control</h2>
     <p>
-      We engineer ultrasound instrumentation tailored for precise brain applications. Our team builds acoustic holograms, phased arrays, and control electronics to shape pressure fields through the skull.
+Microbubble-enhanced focused ultrasound (MB-FUS) has emerged as a powerful method to transiently and noninvasively increase the permeability of the blood-brain barrier (BBB), enabling the delivery of therapeutics to the central nervous system. At the core of this approach lies the ability to precisely control the acoustic behavior of microbubbles within the brain vasculature. The therapeutic efficacy and safety of MB-FUS hinge on the type and strength of microbubble oscillations—ranging from stable cavitation to inertial collapse—each eliciting distinct biological effects.
     </p>
     <p>
-      Using a combination of 3D printing, hydrophone mapping, and simulation tools, we iteratively optimize transducers and control circuits to support focused ultrasound therapy and imaging.
+However, microbubble dynamics are inherently nonlinear and highly sensitive to variations in ultrasound parameters, microbubble properties, local concentration, and vascular microenvironmental conditions. These variables can fluctuate rapidly during treatment, making it challenging to maintain the desired oscillation regime.
     </p>
     <p>
-      These tools are used in conjunction with machine learning-based controllers and real-time feedback mechanisms to deliver personalized and adaptive treatments.
+To address this, our lab develops real-time closed-loop control systems that monitor microbubble acoustic emissions (AEs) and adapt ultrasound exposure dynamically to promote stable oscillations while avoiding collapse. These controllers use spectral features of AEs to infer the oscillation regime and adjust the applied acoustic pressure accordingly. Unlike open-loop approaches, our closed-loop systems are responsive to transient changes in microbubble concentration and vascular interactions, enabling safe and repeatable BBB opening across sessions.
     </p>
+    <div class="imaging-images">
+      <img src="images/Research/instrumentation/modeling.png" alt="Custom Transducer Design">
+    </div>
   </div>
 
-  <!-- Right Images -->
-  <div class="instrumentation-images">
-    <img src="images/instrumentation1.jpg" alt="Custom Transducer Design">
-    <img src="images/instrumentation2.jpg" alt="Hydrophone Mapping Setup">
-    <img src="images/instrumentation3.jpg" alt="Ultrasound Electronics and PCB">
+  <div class="imaging-text">
+    <h2>Ultrasound frequency control of microbubble dynamics</h2>
+    <p>
+Microbubble (MB) oscillations under focused ultrasound (FUS) are key to inducing mechanical stress in brain vasculature, enabling transient blood-brain barrier (BBB) opening and facilitating drug delivery. Traditionally, MB acoustic emission strength—captured through harmonics and ultraharmonics—has been used as a real-time feedback marker to adjust ultrasound amplitude and ensure treatment safety and efficacy. While amplitude-based closed-loop systems have proven effective in modulating BBB permeability, they offer limited ability to differentially tune the diverse biological responses triggered by MBs, resulting in a narrow therapeutic window.</p>
+    <p>
+Emerging research highlights that ultrasound frequency, not just amplitude, plays a crucial role in controlling MB behavior due to resonance effects that depend on MB size, shell properties, and the surrounding microenvironment. By tuning the excitation frequency, it is possible to achieve different oscillation regimes, fluid microstreaming patterns, and vessel wall interactions—each capable of eliciting distinct mechanical and biological responses. However, due to the complexity of MB dynamics in vivo and the limited ability to observe MB-vessel interactions directly, the principles for frequency-based control remain underexplored.</p>
+    <p>
+Our lab integrates high-fidelity modeling and in vivo experimentation to investigate how MB resonance can be harnessed through frequency modulation. This approach aims to refine our understanding of frequency-dependent mechanical stress and its impact on BBB signaling and function, ultimately advancing the design of ultrasound protocols for safe and selective neuromodulation and therapeutic delivery.</p>
+    <div class="imaging-images">
+      <img src="images/Research/instrumentation/frequency.png" alt="Custom Transducer Design">
+    </div>
   </div>
+
+
+  <!-- Right Images -->
+
 </div>

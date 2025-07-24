@@ -285,6 +285,15 @@
     "journal": "BioRxiv",
     "doi": "https://doi.org/10.1101/2025.04.23.650339",
     "image": "images/publications/zamat_2025.jpg"
+  },
+
+   {
+    "year": "2025",
+    "title": "Imaging of macrophage accumulation in solid tumors with ultrasound",
+    "authors": "Alva, A., Kim, C., Premdas, P., Ferry, Y., Lee, H., ... Arvanitis, C.",
+    "journal": "Nature Communications",
+    "doi": "https://doi.org/10.1038/s41467-025-61624-1",
+    "image": "images/publications/alva_2025.jpg"
   }
 
 ]

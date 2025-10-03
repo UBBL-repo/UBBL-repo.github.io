@@ -294,6 +294,15 @@
     "journal": "Nature Communications",
     "doi": "https://doi.org/10.1038/s41467-025-61624-1",
     "image": "images/publications/alva_2025.jpg"
+  },
+
+   {
+    "year": "2025",
+    "title": "Acoustic Holography in the Megahertz Frequency Range with Optimal Lens Topologies and Nonlinear Acoustic Feedback",
+    "authors": "Dash, P., & Arvanitis, C. D.",
+    "journal": "arXiv",
+    "doi": "https://doi.org/10.48550/arXiv.2508.07103",
+    "image": "images/publications/dash_2025.png"
   }
 
 ]

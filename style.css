@@ -723,7 +723,7 @@ body, html {
 
 .panel-image {
   position: relative;
-  width: 20vw;
+  width: 30vw;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -745,6 +745,22 @@ body, html {
   color: white;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 24px);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.panel-label1 {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.4em 1em;
+  background-color: rgba(0, 0, 0, 0.5); /* 🧠 Semi-transparent black */
+  color: white;
+  font-weight: bold;
+  font-size: clamp(12px, 2vw, 20px);
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   pointer-events: none;
